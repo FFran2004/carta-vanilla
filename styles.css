@@ -1,0 +1,167 @@
+section#menu article {
+  border-bottom: 2px dashed #ffffff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#desc-plato {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #desc-plato {
+    font-size: 13px;
+  }
+}
+
+
+
+.inicio {
+  color: #fff;
+  padding-inline: 20px;
+}
+
+.menu {
+  color: #fff;
+  margin-inline: 5vh;
+}
+
+.price {
+  color: #FFC75F;
+}
+
+.titulo {
+  color: #FB4F93;
+} 
+
+.subtitulo {
+  text-align: center;
+}
+
+
+h3 {
+  color: #845EC2;
+}
+
+#inicio {
+  text-align: center;
+}
+
+address {
+  color: #888888;
+  padding-left: 15px;
+  background-color: #3a3a3a;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+
+
+h2 {
+  position: relative;
+  top: 10px;
+  font-weight: 400;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(15, 15, 15);
+}
+
+
+
+.navbar {
+  padding: 10px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.logo {
+  position: relative;
+  left: 20px;
+  top: 5px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 4vh;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.burguer {
+  display: none;
+  color: #fff;
+  font-size: 20px;
+  transform: rotate(90deg);
+  transition: 0.4s ease-in;
+}
+
+#lo {
+  color: rgb(102, 232, 255);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .logo {
+    text-align: center;
+    left: 0;
+    top: 0;
+    margin-bottom: 15px;
+  }
+
+  .navbar-links {
+    font-size: 20px;
+    flex-direction: column;
+    position: static;
+    gap: 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.7s ease-in-out;
+  }
+
+  .burguer {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    cursor: pointer;
+  }
+
+  .section1 {
+    font-size: 13px;
+    text-align: justify;
+
+  }
+
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.7s ease-in-out;
+}
+
+.active {
+  max-height: 600px;
+}

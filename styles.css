@@ -1,3 +1,9 @@
+img {
+  max-width: 250px;
+  border-radius: 20px;
+}
+
+
 section#menu article {
   border-bottom: 2px dashed #ffffff;
   padding-bottom: 20px;
@@ -12,6 +18,7 @@ section#menu article {
   #desc-plato {
     font-size: 13px;
   }
+
 }
 
 
@@ -40,7 +47,7 @@ section#menu article {
 
 
 h3 {
-  color: #845EC2;
+  color: #D3FBD8;
 }
 
 #inicio {
@@ -51,8 +58,9 @@ address {
   color: #888888;
   padding-left: 15px;
   background-color: #3a3a3a;
-  margin: 20px;
-  border-radius: 15px;
+  position: absolute;
+  padding: 20px;
+  border-top: 2px solid #494949;
 }
 
 

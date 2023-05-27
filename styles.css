@@ -28,7 +28,7 @@ section#menu article {
   padding-inline: 20px;
 }
 
-.menu {
+.entrada {
   color: #fff;
   margin-inline: 5vh;
 }
@@ -57,10 +57,10 @@ h3 {
 address {
   color: #888888;
   padding-left: 15px;
-  background-color: #3a3a3a;
+  background-color: #141414;
   position: absolute;
   padding: 20px;
-  border-top: 2px solid #494949;
+  border-top: 2px solid #49494941;
 }
 
 

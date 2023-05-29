@@ -1,89 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for character encoding, compatibility, and responsive design -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plantilla</title>
+    
+    <!-- Title of the HTML document -->
+    <title>Template</title>
+    
+    <!-- Linking external stylesheets and fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link href="./styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" /> <!-- Custom stylesheet file -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   </head>
 
-
   <body>
+    <!-- Button for scrolling to top -->
+    <a href="#" class="scroll-to-top" onclick="scrollToTop()">
+      <i class="material-icons">arrow_upward</i> <!-- Icon for the button -->
+    </a>
 
+    <!-- Navigation bar -->
     <nav class="navbar">
       <div class="logo">
+        <!-- Logo content -->
         <a><span id="lo">Lo</span>go</a>
       </div>
       
-    <nav class="navbar-links">
-      <a href="#" class="nav-link">Entradas</a>
-      <a href="#" class="nav-link">Bebidas</a>
-      <a href="#" class="nav-link">Lomitos</a>
+      <!-- Navigation links -->
+      <nav class="navbar-links">
+        <a href="#bebida" class="nav-link">Drinks</a>
+        <a href="#entradas" class="nav-link">Appetizers</a>
+        <a href="#sandwiches" class="nav-link">Sandwiches</a>
+      </nav>
+      
+      <!-- Hamburger menu icon -->
+      <a class="burguer" onclick="clickMenu()">|||</a>
     </nav>
-    <a class="burguer" onclick="clickMenu()">|||</a>
-  </nav>
 
-  <section id="inicio" class="inicio">
-    <h2 class="titulo"> ¡Bienvenido a Un Tal Harrison!</h2>
-    <p class="subtitulo">Disfruta de nuestros platos deliciosos preparados con ingredientes frescos y de alta calidad.</p>
-  </section>
+    <!-- Section: Inicio -->
+    <section id="inicio" class="inicio">
+      <!-- Section content -->
+      <h2 class="titulo">Welcome to ____!</h2>
+      <p class="subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque ipsum, quo ullam impedit aut rerum qui laudantium nihil voluptatem quod quae? Inventore natus alias nihil nisi tenetur! Mollitia, dolore?</p>
+    </section>
   
-  <section id="entrada" class="entrada">
-    <h2>Entrada</h2>
-    
-    <article>
-      <h3>Empanadas Dulces</h3>
-      <img src="/img/empandas.jpg" alt="empanadas">
-      <p id="desc-plato"> Deliciosos bocados dulces con masa crujiente y relleno de frutas y sabores dulces.</p>
-      <span class="price">Precio: $10.99</span>
-    </article>
-    
-    <article>
-      <h3>Papas c/ Bacon</h3>
-      <img src="/img/papas.jpg" alt="papas">
-      <p id="desc-plato">Clásicas rodajas de papa fritas hasta obtener una textura crujiente y sazonadas al gusto.</p>
-      <span class="price">Precio: $12.99</span>
-    </article>
-    
-    <article>
-      <h3>Pollo Frito</h3>
-      <img src="/img/pollo.jpg"/>
-      <p id="desc-plato">Trozos de pollo jugoso y tierno con una cobertura crujiente y sabrosa.</p>
-      <span class="price">Precio: $8.99</span>
-    </article>
-  </section>
+    <!-- Section: Entradas -->
+    <section id="entradas" class="seccion">
+      <!-- Section content -->
+      <h2>Appetizers</h2>
+
+      <article>
+        <h3>Sweet Empanadas</h3>
+        <img src="https://cdn.pixabay.com/photo/2015/01/08/03/58/empanadas-592354_1280.jpg" alt="empanadas">
+        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam?.</p>
+        <span class="price">Price: <span id="number">$10.90</span></span>
+      </article>
+      
+      <article>
+        <h3>French Fries</h3>
+        <img src="https://cdn.pixabay.com/photo/2016/11/20/09/06/bowl-1842294_1280.jpg" alt="fries">
+        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam?.</p>
+        <span class="price">Price: <span id="number">$12.90</span></span>
+      </article>
+      
+      <article>
+        <h3>Fried Chicken</h3>
+        <img src="https://cdn.pixabay.com/photo/2014/01/24/04/05/fried-chicken-250863_1280.jpg" alt="fried chicken" />
+        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam?.</p>
+        <span class="price">Price: <span id="number">$8.99</span></span>
+      </article>
+    </section>
+
+    <!-- Section: Sandwiches -->
+    <section id="sandwiches" class="seccion">
+      <!-- Section content -->
+      <h2>Sandwiches</h2>
+
+      <article>
+        <h3>Turkey Club Sandwich</h3>
+        <img src="https://cdn.pixabay.com/photo/2017/06/16/07/00/sandwich-2408026_1280.jpg" alt="turkey club sandwich">
+        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam?.</p>
+        <span class="price">Price: <span id="number">$9.99</span></span>
+      </article>
+      
+      <article>
+        <h3>Veggie Wrap</h3>
+        <img src="https://cdn.pixabay.com/photo/2022/02/12/21/22/toast-7009956_1280.jpg" alt="veggie wrap">
+        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam?.</p>
+        <span class="price">Price: <span id="number">$7.99</span></span>
+      </article>
+      
+      <article>
+        <h3>Chicken Avocado Sandwich</h3>
+        <img src="https://cdn.pixabay.com/photo/2021/02/04/12/50/food-5981258_1280.jpg" alt="chicken avocado sandwich" />
+        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam?.</p>
+        <span class="price">Price: <span id="number">$8.99</span></span>
+      </article>
+    </section>
+
+    <!-- Section: Bebida -->
+    <section id="bebida" class="seccion">
+      <!-- Section content -->
+      <h2>Non-Alcoholic Drinks</h2>
+      <article>
+        <h3>Coc-Cola</h3>
+          <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam? Iusto repellat ad iste. Harum minima dolorem architecto debitis. Quia mollitia laudantium ducimus debitis beatae veritatis ratione obcaecati expedita?</p> 
+          <span class="price">Price: <span id="number">$1.50</span></span>
+      </article>
   
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Ponte en contacto con nosotros para hacer una reserva o para cualquier consulta.</p>
-    <address>
-      Un Tal Harrison<br>
-      Calle Principal, 123<br>
-      Ciudad, País<br>
-      Teléfono: 123-456-7890<br>
-      Email: info@untalharrison.com
-    <p>Todos los derechos reservados &copy; 2023 Restaurante delicioso</p>
-    </address>
-  </section>
+      <article>
+        <h3>Sprity</h3>
+        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam? Iusto repellat ad iste. Harum minima dolorem architecto debitis. Quia mollitia laudantium ducimus debitis beatae veritatis ratione obcaecati expedita?</p>
+        <span class="price">Price: <span id="number">$1.50</span></span>
+      </article>
   
+      <article>
+        <h3>Fantaz</h3>
+        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam? Iusto repellat ad iste. Harum minima dolorem architecto debitis. Quia mollitia laudantium ducimus debitis beatae veritatis ratione obcaecati expedita?</p>
+        <span class="price">Price: <span id="number">$1.50</span></span>
+      </article>
+    </section>
 
+    <!-- Section: Contacto -->
+    <section id="contacto">
+      <!-- Section content -->
+      <address>
+        <h2>Contact</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, saepe doloremque beatae laudantium inventore voluptates provident aliquam itaque non error consequatur, iusto cum, natus nostrum consequuntur officiis quo voluptate amet?</p>
+      </address>
+    </section>
 
-
+    <!-- JavaScript -->
     <script type="text/javascript" src="./main.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
+
+<!--This is the commented HTML code that you can use as a template.
+   Comments have been added to facilitate understanding and customization of the code.
+   You can edit the content and styles to fit your needs.-->

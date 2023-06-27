@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Title of the HTML document -->
-    <title>Template</title>
+    <title>707 Panaderia</title>
     
     <!-- Linking external stylesheets and fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,124 +18,182 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+
   </head>
-
   <body>
-    <!-- Button for scrolling to top -->
-    <a href="#" class="scroll-to-top" onclick="scrollToTop()">
-      <i class="material-icons">arrow_upward</i> <!-- Icon for the button -->
-    </a>
 
-    <!-- Navigation bar -->
+    <!-- Barra de navegacion -->
     <nav class="navbar">
-      <div class="logo">
-        <!-- Logo content -->
-        <a><span id="lo">Lo</span>go</a>
-      </div>
-      
-      <!-- Navigation links -->
-      <nav class="navbar-links">
-        <a href="#bebida" class="nav-link">Drinks</a>
-        <a href="#entradas" class="nav-link">Appetizers</a>
-        <a href="#sandwiches" class="nav-link">Sandwiches</a>
+      <div class="navbar-overlay" onclick="handleMenuIconClick()"></div>
+      <button type="button" class="navbar-burger" onclick="handleMenuIconClick()">
+        <span class="material-icons">menu</span>
+      </button>
+      <h1 class="navbar-title" onclick="redirectInicio()">707</h1>
+      <nav class="navbar-menu">
+        <a href="#panaderia" class="active" onclick="hideMenu()">Panaderia</a>
+        <a href="#tortas" onclick="hideMenu()">Tortas</a>
+        <footer>
+          <div class="link-icons">
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bx-map'></i>
+            <i class='bx bxl-whatsapp'></i>
+        </div>
+        </footer>
       </nav>
-      
-      <!-- Hamburger menu icon -->
-      <a class="burguer" onclick="clickMenu()">|||</a>
     </nav>
+    
+    <!--Section: Fondo-->
+    <section class="fondo">
+      <img src="/img/logo1.jpg" alt="logo" class="logo">
+    </section>
+
+
 
     <!-- Section: Inicio -->
     <section id="inicio" class="inicio">
-      <!-- Section content -->
-      <h2 class="titulo">Welcome to ____!</h2>
-      <p class="subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloremque ipsum, quo ullam impedit aut rerum qui laudantium nihil voluptatem quod quae? Inventore natus alias nihil nisi tenetur! Mollitia, dolore?</p>
+      <h2 class="titulo animate__animated animate__pulse">🥐¡Las mejores medialunas del pais!</h2>
     </section>
   
-    <!-- Section: Entradas -->
-    <section id="entradas" class="seccion">
-      <!-- Section content -->
-      <h2>Appetizers</h2>
+    <!-- Section: Panaderia -->
+    <section id="panaderia" class="seccion">
+      <br>
+      <h2>🥖 Panadería</h2>
 
       <article>
-        <h3>Sweet Empanadas</h3>
-        <img src="https://cdn.pixabay.com/photo/2015/01/08/03/58/empanadas-592354_1280.jpg" alt="empanadas">
-        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam?.</p>
-        <span class="price">Price: <span id="number">$10.90</span></span>
+        <h3>Medialunas</h3>
+        <h4>Imagen</h4>
+        <span id="number">$10.90</span>
       </article>
       
       <article>
-        <h3>French Fries</h3>
-        <img src="https://cdn.pixabay.com/photo/2016/11/20/09/06/bowl-1842294_1280.jpg" alt="fries">
-        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam?.</p>
-        <span class="price">Price: <span id="number">$12.90</span></span>
+        <h3>Vigilante</h3>
+        <h4>Imagen</h4>
+        <span id="number">$10.90</span>
       </article>
       
       <article>
-        <h3>Fried Chicken</h3>
-        <img src="https://cdn.pixabay.com/photo/2014/01/24/04/05/fried-chicken-250863_1280.jpg" alt="fried chicken" />
-        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam?.</p>
-        <span class="price">Price: <span id="number">$8.99</span></span>
+        <h3>Cara Sucia</h3>
+        <h4>Imagen</h4>
+        <span id="number">$10.90</span>
       </article>
+
     </section>
+    <!-- Section: Tortas -->
+    <section id="tortas" class="seccion">
+      <br>
+      <h2>🍰 Tortas</h2>
 
-    <!-- Section: Sandwiches -->
-    <section id="sandwiches" class="seccion">
-      <!-- Section content -->
-      <h2>Sandwiches</h2>
+        
+        <article>
+          <h3>Titulo</h3>
+          <img src="/img/cake1.jpg" alt="cake1">
+          <p id="desc-plato">Descripción de la Imagen.</p>
+          <span id="number">$9.99</span>
+      </article>
 
       <article>
-        <h3>Turkey Club Sandwich</h3>
-        <img src="https://cdn.pixabay.com/photo/2017/06/16/07/00/sandwich-2408026_1280.jpg" alt="turkey club sandwich">
-        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam?.</p>
-        <span class="price">Price: <span id="number">$9.99</span></span>
-      </article>
-      
-      <article>
-        <h3>Veggie Wrap</h3>
-        <img src="https://cdn.pixabay.com/photo/2022/02/12/21/22/toast-7009956_1280.jpg" alt="veggie wrap">
-        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam?.</p>
-        <span class="price">Price: <span id="number">$7.99</span></span>
-      </article>
-      
-      <article>
-        <h3>Chicken Avocado Sandwich</h3>
-        <img src="https://cdn.pixabay.com/photo/2021/02/04/12/50/food-5981258_1280.jpg" alt="chicken avocado sandwich" />
-        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam?.</p>
-        <span class="price">Price: <span id="number">$8.99</span></span>
-      </article>
-    </section>
+        <h3>Chocotorta</h3>
+        <img src="/img/cake2.jpg" alt="chocotorta">
+        <p id="desc-plato">Descripción de la Imagen.</p>
+        <span id="number">$9.99</span>
+    </article>
 
-    <!-- Section: Bebida -->
-    <section id="bebida" class="seccion">
-      <!-- Section content -->
-      <h2>Non-Alcoholic Drinks</h2>
-      <article>
-        <h3>Coc-Cola</h3>
-          <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam? Iusto repellat ad iste. Harum minima dolorem architecto debitis. Quia mollitia laudantium ducimus debitis beatae veritatis ratione obcaecati expedita?</p> 
-          <span class="price">Price: <span id="number">$1.50</span></span>
-      </article>
-  
-      <article>
-        <h3>Sprity</h3>
-        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam? Iusto repellat ad iste. Harum minima dolorem architecto debitis. Quia mollitia laudantium ducimus debitis beatae veritatis ratione obcaecati expedita?</p>
-        <span class="price">Price: <span id="number">$1.50</span></span>
-      </article>
-  
-      <article>
-        <h3>Fantaz</h3>
-        <p id="desc-plato">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit ipsam? Iusto repellat ad iste. Harum minima dolorem architecto debitis. Quia mollitia laudantium ducimus debitis beatae veritatis ratione obcaecati expedita?</p>
-        <span class="price">Price: <span id="number">$1.50</span></span>
-      </article>
-    </section>
+    <article>
+      <h3>Tiramisú</h3>
+      <img src="/img/cake3.jpg" alt="">
+      <p id="desc-plato">Descripción de la Imagen.</p>
+      <span id="number">$9.99</span>
+  </article>
+
+    <article>
+    <h3>Mousse de Chocolate</h3>
+    <img src="/img/cake4.jpg" alt="">
+    <p id="desc-plato">Descripción de la Imagen.</p>
+    <span id="number">$9.99</span>
+    </article>
+
+    <article>
+      <h3>Marquise de Merengue</h3>
+      <img src="/img/cake5.jpg" alt="">
+      <p id="desc-plato">Descripción de la Imagen.</p>
+      <span id="number">$9.99</span>
+  </article>
+
+  <article>
+    <h3>Lemon Pie</h3>
+    <img src="/img/cake6.jpg" alt="">
+    <p id="desc-plato">Descripción de la Imagen.</p>
+    <span id="number">$9.99</span>
+</article>
+
+<article>
+  <h3>Individual Lemon Pie y Tarta Frutal</h3>
+  <img src="/img/cake7.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$9.99</span>
+</article>
+
+<article>
+  <h3>Titulo</h3>
+  <img src="/img/cake8.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$9.99</span>
+</article>
+
+<article>
+  <h3>Individual Chocotorta</h3>
+  <img src="/img/cake9.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$9.99</span>
+</article>
+
+<article>
+  <h3>Titulo</h3>
+  <img src="/img/cake10.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$9.99</span>
+</article>
+
+<article>
+  <h3>Tarta de Frutilla</h3>
+  <img src="/img/cake11.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$9.99</span>
+</article>
+
+<article>
+  <h3>Tarta Frutal</h3>
+  <img src="/img/cake12.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$9.99</span>
+</article>
+
+<article>
+  <h3>Marquise de Frutos Rojos</h3>
+  <img src="/img/cake13.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$9.99</span>
+</article>
+
+</section>
+
+
+
 
     <!-- Section: Contacto -->
-    <section id="contacto">
-      <!-- Section content -->
+    <section>
       <address>
-        <h2>Contact</h2>
+        <h2>Contacto</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, saepe doloremque beatae laudantium inventore voluptates provident aliquam itaque non error consequatur, iusto cum, natus nostrum consequuntur officiis quo voluptate amet?</p>
       </address>
     </section>
+
+
 
     <!-- JavaScript -->
     <script type="text/javascript" src="./main.js"></script>

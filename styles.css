@@ -16,7 +16,7 @@ img {
 
 /* color and size for the number of prices */
 #number {
-  color: #FF00F2;
+  color: #8A2BE2;
   font-size: 25px;
 }
 
@@ -57,21 +57,11 @@ img {
 
 
 h3 {
-  color: #D3FBD8;
+  color: #FFFF00;
 }
 
 #inicio {
   text-align: center;
-}
-
-address {
-  font-size: 13px;
-  color: #888888;
-  padding-left: 15px;
-  background-color: #141414;
-  position: absolute;
-  padding: 15px;
-  border-top: 2px solid #49494941;
 }
 
 
@@ -363,53 +353,12 @@ li {
   left: 0;
   width: 100%;
   height: 100%; 
-  background-image: url("img/background1.jpg");
+  background-image: url("img/logo1.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.5;
   z-index: -1;
 }
 
-.fondo img {
-  filter: brightness();
-}
-
-.ventana {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 9999;
-  border-radius: 10px;
-}
-
-.ventana img {
-  max-width: 250px;
-  align-items: center;
-}
-
-.ventana p {
-  margin-top: 10px;
-  color: #000;
-}
-
-.cerrar {
-  color: #aaa;
-  float: right;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.cerrar:hover {
-  color: #000;
-}
 
 #ver-mas {
   position: relative;
@@ -436,7 +385,7 @@ li {
 }
 
 #tortas img:hover {
-  max-width: 270px;
+  max-width: 300px;
   transition: 0.5s;
 }
 
@@ -445,7 +394,33 @@ li {
   padding: 0;
   margin-inline: 15px;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   position: relative;
-  left: 10px;
+  right: 10px;
+}
+
+.advertencia {
+  color: red;
+  font-size: 10px;
+}
+
+#whatsapp-icon {
+  position: fixed;
+  left: 22rem;
+  top: 92vh;
+  background-color: green;
+  color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#whatsapp-icon i {
+  font-size: 30px;
 }

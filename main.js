@@ -10,4 +10,3 @@ hideMenu = () => {
 function redirectInicio() {
   window.location.href = "#";
 }
-

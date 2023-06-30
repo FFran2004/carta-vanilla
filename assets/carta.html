@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character encoding, compatibility, and responsive design -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title of the HTML document -->
+    <title>707 Panaderia</title>
+    
+    <!-- Linking external stylesheets and fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" /> <!-- Custom stylesheet file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+
+  </head>
+  <body>
+
+    <!-- Barra de navegacion -->
+    <nav class="navbar">
+      <div class="navbar-overlay" onclick="handleMenuIconClick()"></div>
+      <button type="button" class="navbar-burger" onclick="handleMenuIconClick()">
+        <span class="material-icons">menu</span>
+      </button>
+      <h1 class="navbar-title" onclick="redirectInicio()">707</h1>
+      <nav class="navbar-menu">
+        <a href="#panaderia" class="active" onclick="hideMenu()">Panaderia</a>
+        <a href="#tortas" onclick="hideMenu()" class="active">Tortas</a>
+        <footer>
+          <div class="link-icons">
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bx-map'></i>
+        </div>
+        </footer>
+      </nav>
+    </nav>
+    
+    <!--Section: Fondo-->
+    <section class="fondo">
+    </section>
+
+    <div id="inicio" class="inicio">
+      <h2 class="animate__animated animate__pulse" id="titulo">🥐¡La mejor medialuna del pais!</h2>
+    </div>
+  
+
+    <!-- Section: Inicio -->
+    
+  
+    <!-- Section: Panaderia -->
+    <section id="panaderia" class="seccion">
+      <br>
+      <h2>🥖 Panadería</h2>
+
+      <article>
+        <h3>Medialunas</h3>
+        <h4 class="tit-prov">Imagen</h4>
+        <span id="number">$10.90</span>
+      </article>
+      
+      <article>
+        <h3>Vigilante</h3>
+        <h4 class="tit-prov">Imagen</h4>
+        <span id="number">$10.90</span>
+      </article>
+      
+      <article>
+        <h3>Cara Sucia</h3>
+        <h4 class="tit-prov">Imagen</h4>
+        <span id="number">$10.90</span>
+      </article>
+
+    </section>
+    <!-- Section: Tortas -->
+    <section id="tortas" class="seccion">
+      <br>
+      <h2>🍰 Tortas</h2>
+
+        
+        <article>
+          <h3>Imperial</h3>
+          <p class="advertencia">* Las imagenes pueden ser ilustrativas.</p>
+          <img src="/assets/img2/cake1.jpg" alt="cake1">
+          <p id="desc-plato">Descripción de la Imagen.</p>
+          <span id="number">$4700</span>
+      </article>
+
+      <article>
+        <h3>Chocotorta 16</h3>
+        <img src="/assets/img2/cake2.jpg" alt="chocotorta">
+        <p id="desc-plato">Descripción de la Imagen.</p>
+        <span id="number">$2700</span>
+    </article>
+
+    <article>
+      <h3>Tiramisú</h3>
+      <img src="/assets/img2/cake3.jpg" alt="">
+      <p id="desc-plato">Descripción de la Imagen.</p>
+      <span id="number">$3900</span>
+  </article>
+
+    <article>
+    <h3>Mousse de Chocolate</h3>
+    <img src="/assets/img2/cake4.jpg" alt="">
+    <p id="desc-plato">Descripción de la Imagen.</p>
+    <span id="number">$9.99</span>
+    </article>
+
+    <article>
+      <h3>Marquise de Merengue</h3>
+      <img src="/assets/img2/cake5.jpg" alt="">
+      <p id="desc-plato">Descripción de la Imagen.</p>
+      <span id="number">$4200</span>
+  </article>
+
+  <article>
+    <h3>Lemon Pie</h3>
+    <img src="/assets/img2/cake6.jpg" alt="">
+    <p id="desc-plato">Descripción de la Imagen.</p>
+    <span id="number">$2600</span>
+</article>
+
+<article>
+  <h3>Individual Lemon Pie y Tarta Frutal</h3>
+  <img src="/assets/img2/cake7.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$9.99</span>
+</article>
+
+<article>
+  <h3>Individual</h3>
+  <img src="/assets/img2/cake8.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$9.99</span>
+</article>
+
+<article>
+  <h3>Individual Chocotorta</h3>
+  <img src="/assets/img2/cake9.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$9.99</span>
+</article>
+
+<article>
+  <h3>Individual</h3>
+  <img src="/assets/img2/cake10.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$9.99</span>
+</article>
+
+<article>
+  <h3>Tarta Espejo</h3>
+  <img src="/assets/img2/cake11.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$5400</span>
+</article>
+
+<article>
+  <h3>Tarta Frutal</h3>
+  <img src="/assets/img2/cake12.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$3600</span>
+</article>
+
+<article>
+  <h3>Marquise de Frutos Rojos</h3>
+  <img src="/assets/img2/cake13.jpg" alt="">
+  <p id="desc-plato">Descripción de la Imagen.</p>
+  <span id="number">$4200</span>
+</article>
+
+</section>
+
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="./main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
+
+<!--This is the commented HTML code that you can use as a template.
+   Comments have been added to facilitate understanding and customization of the code.
+   You can edit the content and styles to fit your needs.-->

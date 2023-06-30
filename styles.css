@@ -12,6 +12,7 @@ img {
 /* description of foods */
 #desc-plato {
   font-size: 20px;
+  color: #000000;
 }
 
 /* color and size for the number of prices */
@@ -37,27 +38,33 @@ img {
 .inicio {
   color: #fff;
   padding-inline: 20px;
+  z-index: 999;
 }
 
 .seccion {
   color: #fff;
   margin-inline: 5vh;
-  border-top: 2px dashed #ffffff;
+  border-top: 2px dashed #000000;
   padding-top: 15px;
   margin-top: 20px;
 }
 
-.titulo {
-  color: #F5D000;
+#titulo {
+  color: #71689d;
   text-align: center;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  top: -10rem;
+  right: 10px;
 } 
 
 
 
 h3 {
-  color: #FFFF00;
+  color: #ff0000;
 }
 
 #inicio {
@@ -70,6 +77,7 @@ h2 {
   position: relative;
   top: 10px;
   font-weight: 400;
+  color: #000000;
 }
 
 
@@ -83,7 +91,7 @@ h2 {
 body {
   padding: 0;
   margin: 0;
-  background-color: rgb(15, 15, 15);
+  background-color: #e9e1de;
 }
 
 html, body {
@@ -92,7 +100,7 @@ html, body {
 
 .navbar {
   padding: 10px;
-  border-bottom: 2px solid #ffe600;
+  border-bottom: 2px solid #000000;
 }
 
 .logo {
@@ -122,7 +130,7 @@ html, body {
 
 .burguer {
   display: none;
-  color: #ffffff;
+  color: #000000;
   font-size: 20px;
   transform: rotate(90deg);
   transition: 0.4s ease-in;
@@ -149,8 +157,6 @@ html, body {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.7s ease-in-out;
-
-
   }
 
   .burguer {
@@ -171,6 +177,7 @@ html, body {
 
 .active {
   max-height: 600px;
+  font-size: 25px;
 }
 
 * {
@@ -227,7 +234,7 @@ button {
   justify-content: center;
   width: 100%;
   height: 64px;
-  background: #19191c;
+  background: #FF9B81;
   color: #f9f9f9;
   font-family: "Poppins";
   box-sizing: border-box;
@@ -285,6 +292,7 @@ body.open .navbar-overlay {
   margin: 0;
   font-size: 25px;
   cursor: pointer;
+  color: #000000;
 }
 
 .navbar-menu {
@@ -301,7 +309,7 @@ body.open .navbar-overlay {
   gap: 20px;
   flex-direction: column;
   align-items: flex-start;
-  background: #000000;
+  background: #71689d;
   visibility: hidden;
   transition: transform 0.3s;
 }
@@ -332,17 +340,20 @@ body.open .navbar-menu {
 }
 
 .navbar-menu > a.active {
-  color: inherit;
+  color: #F9F871;
 }
+
+
 
 li {
   color: #fff;
 }
 
 .fondo {
+  top: 25px;
   position: relative;
   width: 100%;
-  height: 380px;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -354,8 +365,9 @@ li {
   width: 100%;
   height: 100%; 
   background-image: url("img/logo1.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   z-index: -1;
 }
 
@@ -402,6 +414,7 @@ li {
 .advertencia {
   color: red;
   font-size: 10px;
+  font-weight: 500;
 }
 
 #whatsapp-icon {
@@ -423,4 +436,14 @@ li {
 
 #whatsapp-icon i {
   font-size: 30px;
+}
+
+.tit-prov {
+  color: #000000;
+}
+
+.material-icons {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 250;
 }

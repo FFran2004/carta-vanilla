@@ -1,6 +1,3 @@
-/* code for scroll top button*/
-
-
 
 /* images size */
 img {
@@ -46,7 +43,7 @@ img {
   margin-inline: 5vh;
   border-top: 2px dashed #000000;
   padding-top: 15px;
-  margin-top: 20px;
+  margin-top: 20vh;
 }
 
 #titulo {
@@ -57,8 +54,8 @@ img {
   font-size: 16px;
   font-weight: 600;
   position: relative;
-  top: -10rem;
-  right: 10px;
+  top: 12vh;
+  right: 9px;
 } 
 
 
@@ -229,12 +226,12 @@ button {
   justify-content: center;
   width: 100%;
   height: 64px;
-  background-image:url(/img/navbar.png);
+  background-color: #393532;
   color: #f9f9f9;
   font-family: "Poppins";
   box-sizing: border-box;
   padding: 10px;
-  border-bottom: 2px solid #da971c;
+  border-bottom: 3px solid #ffffff;
 }
 
 @media only screen and (min-width: 600px) {
@@ -285,11 +282,12 @@ body.open .navbar-overlay {
   }
 }
 
-.navbar-title {
-  margin: 0;
-  font-size: 25px;
+.navbar-title img {
   cursor: pointer;
-  color: #ffffff;
+  width: 20%;
+  position: relative;
+  top: 5px;
+  left: 5rem;
 }
 
 .navbar-menu {
@@ -306,7 +304,7 @@ body.open .navbar-overlay {
   gap: 20px;
   flex-direction: column;
   align-items: flex-start;
-  background: #533f35;
+  background: #393532;
   visibility: hidden;
   transition: transform 0.3s;
 }
@@ -346,26 +344,11 @@ li {
   color: #fff;
 }
 
-.fondo {
-  top: 25px;
+.logo-707 {
+  display: grid;
+  place-content: center;
   position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-
-.fondo::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; 
-  background-image: url("/img/logo1.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
+  top: 6rem;
 }
 
 
